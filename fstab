@@ -1,0 +1,9 @@
+# <fs>			<mountpoint>	<type>		<opts>		<dump/pass>
+
+#/dev/BOOT		/boot		ext2		noauto,noatime	1 2
+/dev/sda4		/		ext4		noatime		0 1
+/dev/sda3		none		swap		sw		0 0
+/dev/cdrom		/mnt/cdrom	auto		noauto,ro	0 0
+#/dev/fd0		/mnt/floppy	auto		noauto		0 0
+
+shm			/dev/shm	tmpfs		nodev,nosuid,noexec	0 0

@@ -1,0 +1,28 @@
+gnome-extra/evolution-data-server -weather
+www-plugins/adobe-flash nspluginwrapper
+media-video/ffmpeg threads
+dev-libs/gmime mono
+app-emulation/wine -win64
+gnome-base/gvfs fuse
+dev-lang/php -spell gd cgi fpm ftp mysql mysqli mysqlnd postgres pdo curl cli xml curlwrappers bcmath soap embed ldap-sasl sockets xmlrpc mhash pcntl xmlreader xmlwriter
+net-p2p/mldonkey bittorrent
+
+www-servers/nginx vim-syntax
+dev-db/mysql big-tables
+app-editors/vim cscope
+app-emacs/emacs-common-gentoo emacs22icons
+app-editors/emacs Xaw3d gconf gzip-el hesiod kerberos m17n-lib motif sound source toolkit-scroll-bars xft
+
+dev-php5/pecl-imagick
+
+net-misc/openssh -ldap
+#x11-libs/qt-qt3support accessibility kde
+#x11-libs/qt-webkit kde
+dev-libs/libxml2 icu
+net-misc/openssh kerberos skey
+
+www-apps/mediawiki imagemagick mysql postgres
+#dev-db/postgresql-server pg_legacytimestamp
+#dev-db/postgresql-base pg_legacytimestamp
+
+dev-ruby/activerecord mysql

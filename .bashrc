@@ -24,8 +24,4 @@ alias ls='ls --color=auto'
 alias ll='ls -hl'
 alias grep='grep --color=auto'
 [[ -f /etc/profile.d/bash-completion ]] && source /etc/profile.d/bash-completion
-
-alias vim='gvim --remote-tab-silent' 
-alias gvim='gvim --remote-tab-silent' 
-
 # Put your fun stuff here.

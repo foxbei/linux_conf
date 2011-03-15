@@ -1,0 +1,4 @@
+config_eth0=("10.240.4.150/24")
+routes_eth0=("default via 10.240.4.254")
+
+config_eth1=("192.168.137.1/24")

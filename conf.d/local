@@ -1,0 +1,31 @@
+# Here is where you can put anything you need to start
+# that there is not an init script for.
+
+local_start() {
+	# This is a good place to load any misc programs
+	# on startup (use &>/dev/null to hide output)
+	ulimit -SHn 51200
+	/etc/init.d/nginx start
+	/etc/init.d/php-fpm start
+	/etc/init.d/mysql start
+	echo "1" > /proc/sys/net/ipv4/ip_forward
+	iptables -F
+	iptables -P INPUT ACCEPT
+	iptables -P FORWARD ACCEPT
+	iptables -t nat -A POSTROUTING -o eth0  -j MASQUERADE
+
+	# We should always return 0
+	#return 0
+}
+
+local_stop() {
+	# This is a good place to unload any misc.
+	# programs you started above.
+
+        /etc/init.d/nginx stop
+        /etc/init.d/php-fpm stop
+        /etc/init.d/mysql stop
+
+	# We should always return 0
+	return 0
+}
